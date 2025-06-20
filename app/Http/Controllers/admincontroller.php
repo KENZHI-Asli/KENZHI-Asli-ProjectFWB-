@@ -59,7 +59,6 @@ class AdminController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email,' . $id,
            'role' => 'required|in:admin,penjual,pembeli',
-
             'password' => 'nullable|string|min:6|confirmed',
         ]);
 
